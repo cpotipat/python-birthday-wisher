@@ -24,6 +24,6 @@ for person in data:
             connection.login(user=MY_EMAIL, password=PASSWORD)
             connection.sendmail(
                 from_addr=MY_EMAIL,
-                to_addrs="basketball_siam@hotmail.com",
+                to_addrs=person["email"],
                 msg=f"Subject:Happy Birthday!!\n\n{new_letter}"
             )
